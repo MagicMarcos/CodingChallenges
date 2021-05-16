@@ -29,7 +29,7 @@
 function countSheeps(arrayOfSheep) {
   let countArr = []
       
-      arrayOfSheep.forEach((el) =>{ if(el == true){
+      arrayOfSheep.forEach((el) => { if(el == true){
         countArr.push(el)
         }
       })
