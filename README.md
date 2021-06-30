@@ -3,7 +3,15 @@
 
 <h1>How It's Made:</h1>
 
-These coding challenges encompass a variety of skill sets useful for full stack web development, including HTML, CSS, JavaScript, Node.Js and React.Js
+These coding challenges encompass a variety of skill sets useful for full stack web development, including:
+
+<ul> 
+  <li>HTML </li> 
+  <li> CSS</li>
+  <li> JavaScript</li> 
+  <li> Node</li> 
+  <li> React</li>
+</ul>
 
 <h1>Lessons Learned:</h1>
 
