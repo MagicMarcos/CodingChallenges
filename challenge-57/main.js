@@ -9,10 +9,23 @@
 // Test.assertEquals(repeats([5, 10, 19, 13, 10, 13]),24)
 
 function repeats(arr) {
-	let noRepeat = dof;
+	let arr2 = [];
+	let newArr = arr.reduce((unique, num) => {
+		num = String(num);
+		if (num in unique) {
+			unique[num]++;
+		} else {
+			unique[num] = 1;
+		}
+		return unique;
+	}, {});
+	for (let num in newArr) {
+		if (newArr[num] === 1) {
+			arr2.push(num);
+		}
+	}
+	return Number(arr2[0]) + Number(arr2[1]);
 }
 
-console.log([4, 5, 7, 5, 4, 8], 15);
-console.log([9, 10, 19, 13, 19, 13], 19);
-console.log([16, 0, 11, 4, 8, 16, 0, 11], 12);
-console.log([5, 17, 18, 11, 13, 18, 11, 13], 22);
+console.log(repeats([4, 5, 7, 5, 4, 8]), 15);
+console.log(repeats([9, 10, 19, 13, 19, 13]), 19);
