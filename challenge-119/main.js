@@ -13,3 +13,26 @@ function solution(number) {
 			.reduce((a, c) => a + c);
 	}
 }
+
+let interval = 10000;
+
+function timeOut() {
+	setTimeout(testFunc, interval);
+}
+
+function testFunc() {
+	if (interval > 2500) {
+		interval -= 1000;
+	} else if (interval <= 2500) {
+		interval -= 100;
+	} else if (interval <= 1000) {
+		interval -= 50;
+	} else if (interval === 100) {
+		interval = 100;
+	}
+	console.log(interval);
+	console.log('hello');
+	timeOut();
+}
+
+timeOut();
