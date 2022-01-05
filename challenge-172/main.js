@@ -3,8 +3,8 @@
 // (In this case, all triangles must have surface greater than 0 to be accepted).
 
 function isTriangle(a, b, c) {
-  const option1 = a + b > c;
-  const option2 = a + c > b;
-  const option3 = b + c > a;
-  return option1 && option2 && option3;
+  const op1 = a + b > c;
+  const op2 = a + c > b;
+  const op3 = b + c > a;
+  return op1 && op2 && op3;
 }
